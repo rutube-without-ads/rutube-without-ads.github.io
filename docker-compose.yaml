@@ -16,8 +16,6 @@ services:
       - ./:/usr/share/caddy
       - caddy_data:/data
       - caddy_config:/config
-    depends_on:
-      - backend
     restart: unless-stopped
     networks:
       - network
