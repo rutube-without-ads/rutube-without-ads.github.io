@@ -1,8 +1,4 @@
 rutube.dabox.ru {
     root * /usr/share/caddy
     file_server
-
-    handle {
-        file_server
-    }
 }
