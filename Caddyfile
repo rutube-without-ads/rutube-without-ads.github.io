@@ -1,4 +1,4 @@
-ru.tuty.ru {
+rutube.dabox.ru {
     root * /usr/share/caddy
     file_server
 
