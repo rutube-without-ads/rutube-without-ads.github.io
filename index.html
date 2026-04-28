@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Смотреть Rutube — встроенный плеер</title>
 <meta name="description" content="Встраиваем Rutube-видео на страницу. Введите ссылку или ID, чтобы загрузить плеер. Рекламные блоки предоставляются рекламной сетью и не блокируются.">
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
 <style>
     :root {
         --primary: #ff3e00;
@@ -195,6 +197,7 @@
     <!-- Центральный контент -->
     <div class="page-container">
         <h1>Смотреть Rutube — встроенный плеер</h1>
+        <div id="yandex_rtb_R-A-19179271-1"></div>
 
         <div class="player-controls" aria-label="Управление плеером">
             <input type="text" class="video-input" aria-label="URL или ID видео" placeholder="Вставьте Rutube URL или ID (32 символа)" value="">
@@ -225,6 +228,15 @@
         <div id="yandex_rtb_right">Реклама</div>
     </aside>
 </div>
+
+<script>
+window.yaContextCb.push(() => {
+    Ya.Context.AdvManager.render({
+        "blockId": "R-A-19179271-1",
+        "renderTo": "yandex_rtb_R-A-19179271-1"
+    })
+})
+</script>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
